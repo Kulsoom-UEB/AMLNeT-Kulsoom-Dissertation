@@ -1,0 +1,11 @@
+folder,path,exists
+raw,C:\Users\hassa\PycharmProjects\AMLNet\data\raw,True
+processed,C:\Users\hassa\PycharmProjects\AMLNet\data\processed,True
+notebooks,C:\Users\hassa\PycharmProjects\AMLNet\notebooks,True
+src,C:\Users\hassa\PycharmProjects\AMLNet\src,True
+models,C:\Users\hassa\PycharmProjects\AMLNet\models,True
+outputs,C:\Users\hassa\PycharmProjects\AMLNet\outputs,True
+tables,C:\Users\hassa\PycharmProjects\AMLNet\outputs\tables,True
+figures,C:\Users\hassa\PycharmProjects\AMLNet\outputs\figures,True
+report_evidence,C:\Users\hassa\PycharmProjects\AMLNet\outputs\report_evidence,True
+dashboard,C:\Users\hassa\PycharmProjects\AMLNet\dashboard,True
