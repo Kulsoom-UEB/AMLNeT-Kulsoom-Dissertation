@@ -7,7 +7,7 @@ the frozen prediction file and explainability tables), so it starts instantly
 and always shows exactly the numbers reported in the paper.
 
 Run:
-    streamlit run src/app.py
+    streamlit run dashboard/app.py
 
 Requires: streamlit, plotly, pandas, numpy (see requirements.txt).
 """
