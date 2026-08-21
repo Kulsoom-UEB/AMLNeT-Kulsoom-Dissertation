@@ -107,7 +107,7 @@ python src/step08_explainability.py           # built-in, permutation and SHAP
 Launch the reviewer dashboard:
 
 ```bash
-streamlit run src/app.py
+streamlit run dashboard/app.py
 ```
 
 ---
