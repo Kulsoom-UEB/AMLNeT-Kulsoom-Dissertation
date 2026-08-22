@@ -6,6 +6,8 @@ Supervisor: Dr. Anwar Haq
 
 A reproducible, imbalance-aware and explainable machine-learning pipeline for suspicious-transaction risk detection on the AMLNet synthetic dataset. All model outputs are framed as **decision-support evidence for human AML reviewers**, not as automated compliance or legal determinations.
 
+> **Reviewing this project?** A [recorded dashboard walkthrough](https://drive.google.com/file/d/10jZbtqbLWENUH5QFAOESdcQHTcB09NLs/view?usp=drive_link) shows the complete tool in use. All reported results are committed under `outputs/` and can be inspected without installing anything.
+
 ---
 
 ## Headline result
@@ -271,6 +273,23 @@ streamlit run src/app.py
 ```
 
 The dashboard is the deployment prototype for this project. Its defining design decision is that it **reads only the saved outputs of steps 06–08** — the metrics tables, figures, frozen prediction file and explainability tables — rather than re-running the model. This means it starts instantly and, more importantly, the numbers it displays are provably the same numbers reported in the paper: there is no separate inference path that could drift from the evaluated results.
+
+### Seeing the dashboard without running anything
+
+A **recorded walkthrough of the complete dashboard is available here:**
+
+> **[▶ Dashboard demonstration video](https://drive.google.com/file/d/10jZbtqbLWENUH5QFAOESdcQHTcB09NLs/view?usp=drive_link)**
+
+The recording shows every tab in use on the full test set, and is the recommended way to review the dashboard.
+
+**Why a video rather than a live deployment?** This project is explicitly framed as an academic prototype for human-reviewer decision support, not a production anti-money-laundering system. Hosting it as a live public service would sit awkwardly against that framing, so a recorded demonstration is provided instead.
+
+**Note on running it locally.** The dashboard reads a prediction file, `data/processed/test_predictions.parquet`, which is produced by step 07. That file is not included in this repository because it exceeds GitHub's upload size limit, in the same way the raw dataset does. Two consequences follow:
+
+- Running the pipeline first (`python src/run_all.py`) generates it, after which every tab works
+- Opening the dashboard without running the pipeline leaves the **Alert queue** and **Case review** tabs empty; the other five tabs — Overview, Explainability, Risk profile, Performance and Limitations — read the committed CSV tables in `outputs/tables/` and work immediately
+
+Every number shown in the dashboard also appears in `outputs/tables/`, which **is** committed, so all reported results can be verified from this repository without running or installing anything.
 
 It presents seven tabs:
 
