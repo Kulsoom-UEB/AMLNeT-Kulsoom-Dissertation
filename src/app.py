@@ -6,7 +6,7 @@ Reads ONLY saved outputs produced by steps 06-08 (metrics tables, figures,
 the frozen prediction file and explainability tables), so it starts instantly
 and always shows exactly the numbers reported in the paper.
 
-Run:
+To run Streamlit dashboard:
     streamlit run src/app.py
 
 Requires: streamlit, plotly, pandas, numpy (see requirements.txt).
