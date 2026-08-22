@@ -1,5 +1,5 @@
 """
-Step 09: Streamlit Reviewer-Support.
+Step 09: Streamlit Reviewer-Support Dashboard.
 CRISP-DM: Deployment (prototype).
 
 Reads ONLY saved outputs produced by steps 06-08 (metrics tables, figures,
