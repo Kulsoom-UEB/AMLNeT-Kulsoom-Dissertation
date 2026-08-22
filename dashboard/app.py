@@ -1,13 +1,13 @@
 """
-Step 09: Streamlit Reviewer-Support Dashboard (polished).
+Step 09: Streamlit Reviewer-Support.
 CRISP-DM: Deployment (prototype).
 
 Reads ONLY saved outputs produced by steps 06-08 (metrics tables, figures,
 the frozen prediction file and explainability tables), so it starts instantly
 and always shows exactly the numbers reported in the paper.
 
-Run:
-    streamlit run dashboard/app.py
+To run the Streamlit dashboard:
+    streamlit run src/app.py
 
 Requires: streamlit, plotly, pandas, numpy (see requirements.txt).
 """
